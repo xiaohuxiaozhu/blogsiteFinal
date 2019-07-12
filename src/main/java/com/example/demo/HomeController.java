@@ -14,4 +14,19 @@ public class HomeController {
     public String blogSitePage(){
         return "BlogSite";
     }
+
+    @RequestMapping("/About")
+    public String aboutPage(){
+        return "About";
+    }
+
+    @RequestMapping("/ApplyNow")
+    public String applyNowPage(){
+        return "ApplyNow";
+    }
+
+    @RequestMapping("/Profile")
+    public String profilePage(){
+        return "Profile";
+    }
 }

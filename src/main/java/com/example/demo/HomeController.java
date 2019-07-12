@@ -29,4 +29,27 @@ public class HomeController {
     public String profilePage(){
         return "Profile";
     }
+
+    @RequestMapping("/CoreJava")
+    public String coreJavaPage(){
+        return "CoreJava";
+    }
+
+    @RequestMapping("/Github")
+    public String githubPage(){
+        return "Github";
+    }
+
+    @RequestMapping("/Object-orientedJava")
+    public String objectPage(){
+        return "Object-orientedJava";
+    }
+
+    @RequestMapping("/HTML-CSS-Bootstrap")
+    public String htmlPage(){
+        return "HTML-CSS-Bootstrap";
+    }
+
+
+
 }

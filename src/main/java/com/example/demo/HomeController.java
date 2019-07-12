@@ -50,6 +50,9 @@ public class HomeController {
         return "HTML-CSS-Bootstrap";
     }
 
-
+    @RequestMapping("/ProgramDesignAlgorithms")
+    public String programPage(){
+        return "ProgramDesignAlgorithms";
+    }
 
 }

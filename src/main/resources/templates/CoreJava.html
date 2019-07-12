@@ -1,13 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Core Java</title>
+    <!--Bootstrap CSS-->
+    <div th:fragment="bootstrap-css">
+        <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Belgrano|Flamenco&display=swap" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>
 </head>
 <body>
-    <h1>Core Java</h1>
-    <p>The Core Java technologies and application programming interfaces (APIs) are the foundation of the Java Platform, Standard Edition (Java SE). They are used in all classes of Java programming, from desktop applications to Java EE applications. See the other tabs above for information on other technologies included in Java SE.</p>
-    <p><a href="https://www.oracle.com/technetwork/java/javase/tech/index-jsp-137187.html">Learn more... </a> </p>
+<div class="container-fluid">
+    <div th:fragment="navbar">
 
+
+        <nav class="navbar navbar-light" style="background-color: #2e3033;">
+            <!-- Navbar content -->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!-- <a class="navbar-brand" href="#">Navbar</a>-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Profile.html">Profile</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/Entry" id="navbarDropdownMenuLink"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Entry
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="Github.html">Github</a>
+                                <a class="dropdown-item" href="ProgramDesignAlgorithms.html">Program Design & Algorithms</a>
+                                <a class="dropdown-item" href="CoreJava.html">Core Java</a>
+                                <a class="dropdown-item" href="Object-orientedJava.html">Object-oriented Java</a>
+                                <a class="dropdown-item" href="HTML-CSS-Bootstrap.html">HTML/CSS/Bootstrap</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+
+
+
+        <div class="card bg-dark"  >
+
+            <img class="card-img-top" src="https://res.cloudinary.com/duqszimh4/image/upload/v1562943855/1411354_c103_3_vwu2ye_dolafv.jpg" alt="Core Java">
+            <div class="card-body">
+                <div class="card img-overlay" >
+                    <!--            <h1 class="card-title"></h1>-->
+                    <p class="card-text">
+                    <h1 class="display-3"  >Perfect Java Tutorial</h1>
+                    <h1 class="display-4" >Journey from Core Java to Advance Java</h1>
+                    <p>Do you want to learn Java? Want to become an expert in Java? And still looking for the best Java tutorial?
+                        This tutorial is specially designed for beginners as well as Java professionals. Here you will get all the
+                        information of Java programming language. Let’s take a quick look at what we will learn in this Java tutorial.</p>
+
+                    <br>
+                    <br>
+
+                    <ul>
+                        <li>Introduction to Java programming with its features                        </li>
+                        <li>Java Architecture & Applications of Java Programming Language</li>
+                        <li>Advantages & Disadvantages of Java</li>
+                        <li>C++ Vs Java</li>
+                    </ul>
+
+
+
+                    <br>
+                    <br>
+                    <h3>So are you excited to explore Java tutorial for Beginners? </h3>
+
+
+                    <h3>1. What is Java Programming Language?</h3>
+                    <p>Java is a widely used programming language and is designed for the distributed environment of internet.
+                        It is a general-purpose programming language that is concurrent, class-based, and object-oriented.
+                        It is free to access and we can run it on all the platforms. Java follows the principle of WORA (
+                        Write Once, Run Anywhere), and is platform-independent. It is also simple and easy to learn.
+                        If you want to print say (“Hello, World!”), you would type: <a href="https://data-flair.training/blogs/java-tutorial/" >Read more</a></p>
+
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <h3>2.History of Java</h3>
+                    <p>Java first appeared in 1995 as Oak. This was a reference to the Oak tree that stood afar Gosling’s office. Before it could find its popularity as Java
+                        (finding its roots in coffee, which in turn is attributed to Java- an island in Indonesia), they also decided to call the project Green.
+                        <a href="https://data-flair.training/blogs/java-tutorial/" >Read more</a></p>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    </p>
+
+                    </p>
+
+                    <div class="card  " align="center">
+                        <div class="p-3 mb2 bg-dark text-white " >
+                            Java Bootcamp
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Contact Us</h5>
+                            <p class="card-text"> If you have any questions, please feel free to contact us! </p>
+                            <a href="Profile.html" class="btn btn-primary">Click</a>
+                        </div>
+                        <div class="p-3 mb2 bg-dark text-white " >
+                            Thank you for visiting!
+                        </div>
+                        <!--            <a href="#" class="btn btn-primary">Go Somewhere</a>-->
+                    </div></div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
 </body>
 </html>
